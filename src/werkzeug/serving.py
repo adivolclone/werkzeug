@@ -942,6 +942,7 @@ def is_running_from_reloader() -> bool:
     return os.environ.get("WERKZEUG_RUN_MAIN") == "true"
 
 
+# 启动一个用于开发的wsgi server
 def run_simple(
     hostname: str,
     port: int,
